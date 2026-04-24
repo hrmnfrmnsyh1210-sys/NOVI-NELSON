@@ -7,8 +7,7 @@ const MusicPlayer: React.FC<{ autoStart?: boolean }> = ({ autoStart = false }) =
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Royalty-free traditional/acoustic music
-    const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3'); 
+    const audio = new Audio('/music.mp3');
     audio.loop = true;
     audioRef.current = audio;
 
