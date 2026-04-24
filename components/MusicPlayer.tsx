@@ -12,11 +12,7 @@ const MusicPlayer: React.FC<{ autoStart?: boolean }> = ({ autoStart = false }) =
     audioRef.current = audio;
 
     if (autoStart) {
-      const playAudio = () => {
-        audio.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
-        document.removeEventListener('click', playAudio);
-      };
-      document.addEventListener('click', playAudio);
+      audio.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
     }
 
     return () => {
