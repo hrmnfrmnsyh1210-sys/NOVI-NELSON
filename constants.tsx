@@ -21,23 +21,29 @@ export const WEDDING_DATA: WeddingData & {
     instagram: "",
   },
   akad: {
-    date: "",
+    date: "Rabu, 20 Mei 2026",
     time: "",
     location: "",
     address: "",
-    mapUrl: "",
+    mapUrl: "https://maps.app.goo.gl/quVb79XVM7kbS1c96",
   },
   reception: {
-    date: "",
+    date: "Kamis, 21 Mei 2026",
     time: "",
     location: "",
     address: "",
-    mapUrl: "",
+    mapUrl: "https://maps.app.goo.gl/quVb79XVM7kbS1c96",
   },
   gallery: [
     "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
   ],
-  accounts: [],
+  accounts: [
+    {
+      bank: "BCA",
+      number: "7925615510",
+      holder: "Nofi Yanti",
+    },
+  ],
 };
 
 export const COLORS = {
