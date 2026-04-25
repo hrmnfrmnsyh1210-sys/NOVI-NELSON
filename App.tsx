@@ -413,6 +413,20 @@ const App: React.FC = () => {
                       </a>
                     </div>
                   )}
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
+                    className="mt-12 inline-flex items-center gap-4 bg-white/10 backdrop-blur-xl border border-white/20 px-10 py-5 rounded-full shadow-xl"
+                  >
+                    <Sparkles size={20} className="text-[#c4a484]" />
+                    <p className="text-white font-light tracking-widest text-base">
+                      Hiburan oleh <span className="font-bold text-[#c4a484]">Alista Band</span>
+                    </p>
+                    <Sparkles size={20} className="text-[#c4a484]" />
+                  </motion.div>
                 </motion.div>
               </div>
             </section>
