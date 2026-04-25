@@ -128,7 +128,7 @@ const App: React.FC = () => {
                   </h2>
                   <div className="w-20 md:w-32 h-[1.5px] bg-[#c4a484] mx-auto my-8"></div>
                   <p className="text-lg md:text-3xl font-light tracking-[0.2em] drop-shadow-md text-[#fcfaf2]">
-                    {WEDDING_DATA.akad.date}
+                    {WEDDING_DATA.reception.date}
                   </p>
                 </motion.div>
 
@@ -619,8 +619,11 @@ const App: React.FC = () => {
                 <p className="text-xs tracking-[0.5em] uppercase opacity-40 font-bold mb-6">
                   Terima Kasih
                 </p>
+                <p className="font-serif-elegant italic opacity-60 text-base mb-4">
+                  Hiburan oleh <span className="font-bold not-italic text-[#c4a484]">Alista Band</span>
+                </p>
                 <p className="text-[11px] opacity-20 uppercase tracking-[0.3em] font-light">
-                  Digital Invitation • Elegansi Tradisi 2025
+                  Digital Invitation • Elegansi Tradisi 2026
                 </p>
               </div>
             </footer>
